@@ -1,0 +1,22 @@
+Standar API
+
+[METHOD]:{root.api}/{version}/{grouping}/{endpoint}
+SAMPLE:
+[POST] : http://mern-api.irmawan.com/v1/auth/login
+=================================================================================================================================================
+Standar Status Response 
+
+200 - OK                                    -----> CALL API SUCCES
+201 - CREATED                               -----> POST SUCCESS
+400 - BAD REQUEST                           -----> ERROR ON CLIENT SIDE
+401 - UNAUTHORIZE                           -----> USER NOT AUTHORIZED TO ACCESS
+403 - FORBIDDEN                             -----> USER NOT ALLOWED TO ACCESS
+404 - NOT FOUND                             -----> REQUEST ENDPOINT NOT FOUND
+500 - INTERNAL SERVER GATEWAY               -----> ERROR ON SERVER SIDE
+502 - BAD GATEWAY                           -----> INVALID RESPONSE FROM ANOTHER REQUEST
+=================================================================================================================================================
+Group: Auth
+
+[1] - Register
+[2] - Login
+
