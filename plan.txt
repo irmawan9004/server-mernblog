@@ -41,3 +41,38 @@ status-response:
 400 --> Input yang dimasukkan tidak valid
 [2] - Login
 
+
+
+=================================================================================================================================================
+
+Group : BLOG
+
+[1] - Create Blog Post
+[POST] : {root.api}/{version}/blog/post
+
+req:
+{
+  "title":"Title Blog",
+  "image":"imagefile.png",
+  "body":"lorem Ipsum dorem dummy printing"
+}
+
+res:
+{
+  "message":"Success create blog post",
+  "data":{
+    "post_id":1,
+    "title":"Title Blog",
+    "image":"imagefile.png",
+    "body":"lorem Ipsum dorem dummy printing"
+    "created_at":"12/06/2020"
+    "author":{
+      "uid":1,
+      "name":"Testing"
+    }
+  }
+}
+
+status-response:
+201 --> CREATED
+400 --> Input yang dimasukkan tidak valid
