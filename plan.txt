@@ -18,5 +18,26 @@ Standar Status Response
 Group: Auth
 
 [1] - Register
+[POST] => {root.api}/{version}/{endpoint}
+
+req:
+{
+  "name":"Testing",
+  "email":"test@email.com"
+  "password": "121212"
+}
+
+res:
+{
+  "message":"Register Success",
+  "data":{
+    "u_id":1,
+    "name":"Testing",
+    "email":"test@email.com"
+  }
+}
+status-response:
+201 --> CREATED
+400 --> Input yang dimasukkan tidak valid
 [2] - Login
 
